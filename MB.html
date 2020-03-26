@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="StyleSheet" href="MB.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MB</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calculadora Básica</h1>
+    </header>
+
+    <div class="calculadora">
+      <form>
+        <input id="num1" type="number" class="casilla" placeholder="Número 1" />
+
+        <input id="num2" type="number" class="casilla" placeholder="Número 2" />
+
+        <p id="resultado"></p>
+
+        <button
+          onclick="operaciones('sumar'); return false;"
+          class="btn btn-primary btn-lg btn-block"
+          type="submit"
+        >
+          +
+        </button>
+
+        <button
+          onclick="operaciones('restar'); return false;"
+          class="btn btn-primary btn-lg btn-block"
+          type="submit"
+        >
+          -
+        </button>
+
+        <button
+          onclick="operaciones('multiplicar'); return false;"
+          class="btn btn-primary btn-lg btn-block"
+          type="submit"
+        >
+          x
+        </button>
+
+        <button
+          onclick="operaciones('dividir'); return false;"
+          class="btn btn-primary btn-lg btn-block"
+          type="submit"
+        >
+          /
+        </button>
+      </form>
+    </div>
+
+    <script src="MB.js"></script>
+  </body>
+</html>
